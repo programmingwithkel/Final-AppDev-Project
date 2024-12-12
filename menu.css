@@ -1,0 +1,670 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style:none;
+    scroll-behavior: smooth;
+
+}
+html,body{
+    width: 100%;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    text-decoration: none;
+    list-style:none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ffe8C5;
+    margin:0;
+    padding: 0;
+    top: 0%;
+    font-family: 'Kalnia', serif;
+    animation: transitionIn 0.75s;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    margin-right: 50px;
+    background-color: (255,232,197, 0.5);
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 10px;
+}
+nav ul li a{
+    color:#db9c48;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    transition: 0.75s;
+    margin-right: 20px;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.menu{
+    background-color: #db9c48;
+    color:#ffe8c5;
+    border-radius: 10px;
+
+}
+.home:hover{
+    background-color: #db9c48;
+    border-radius: 10px;
+    transition: .5s;
+    color:#ffe8c5;
+}
+.menu:hover{
+    background-color: #db9c48;
+    border-radius: 10px;
+    transition: .5s;
+    color: #ffe8c5;
+}
+.souvenir:hover{
+    background-color: #db9c48;
+    border-radius: 10px;
+    transition: .5s;
+    color: #ffe8c5;
+}
+.more:hover{
+    background-color: #db9c48;
+    border-radius: 10px;
+    transition: .5s;
+    color:#ffe8c5;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.place{
+    display: flex;
+    width: 100%;
+}
+.logo img{
+    width: 500px;
+    margin-top: 0px;
+    height: 500px;
+    margin-left: 10px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #db9c48;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check{
+    display: none;
+}
+.cat{
+    margin-top: 30px;
+    font-size: 60px;
+    font-weight: lighter;
+    color:#db9c48; 
+    margin-left: 470px;
+    font-family: 'Kalnia', serif;
+}
+.category{
+    background-color: #ffe8C5;
+}
+.category_menu{
+    display:flex;
+    flex-direction: column;
+    background-color: #ffe8C5;
+}
+.sea_blender{
+    display:grid;
+    margin-top: 25px;
+    background-color: #ffe8C5;
+    text-align: center;
+}
+.sea_blender h2{
+    color: #db9c48;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.sea_blender .order {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #ffe8c5;
+    color: #db9c48;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: ease-in-out 1s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sea_blender .order a {
+    text-decoration: none;
+    color: inherit;
+}
+.soda_fruity_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+.soda_pop,
+.fruity_yakult{
+    display: grid;
+    grid-template-columns: 1fr;
+    border:2px solid #db9c48;
+    background-color: #ffe8C5;
+}
+.soda_pop h3,
+.fruity_yakult h3{
+    color:#db9c48;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #db9c48;
+    text-align: center;
+    font-size: 30px;
+}
+.soda_product{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.soda_product h2{
+    color: white;
+}
+
+.blueberry,
+.greenapple,
+.kiwi,
+.lychee,
+.strawberry{
+    display:flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+.blueberry img:hover,
+.greenapple img:hover,
+.kiwi img:hover,
+.lychee img:hover,
+.strawberry img:hover{
+    transform: scale(1.1);
+    z-index:2 ;
+}
+.blueberry img,
+.greenapple img,
+.kiwi img,
+.lychee img,
+.strawberry img{
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 28px;
+    margin-right: 10px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.blueberry span,
+.greenapple span,
+.kiwi span,
+.lychee span,
+.strawberry span{
+    font-size: 17px;
+    display:block;
+    color: #db9c48;
+    margin-bottom: 10px;
+    transition: 1s;
+
+}
+.blueberry span:hover,
+.greenapple span:hover,
+.kiwi span:hover,
+.lychee span:hover,
+.strawberry span:hover{
+    transform: scale(1.1);
+    z-index:2 ;
+}
+.yakult_product{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.blueberry_yakult,
+.greenapple_yakult,
+.kiwi_yakult,
+.lychee_yakult,
+.strawberry_yakult{
+    display:flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+.blueberry_yakult{
+    position: relative;
+}
+.greenapple_yakult{
+    position: relative;
+}
+.kiwi_yakult{
+    position: relative;
+}
+.lychee_yakult{
+    position: relative;
+}
+.strawberry_yakult{
+    position: relative;
+}
+.best_yakult1{
+    position: absolute;
+    top:-45px;
+    left:-45px
+}
+.best_yakult2{
+    position: absolute;
+    top:-45px;
+    left:-45px
+}
+.best_yakult3{
+    position: absolute;
+    top:-45px;
+    left:-45px
+}
+.best_yakult4{
+    position: absolute;
+    top:-45px;
+    left:-45px
+}
+.blueberry_yakult img,
+.greenapple_yakult img,
+.kiwi_yakult img,
+.lychee_yakult img,
+.strawberry_yakult img{
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 28px;
+    margin-right: 10px;
+    height: 201px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.blueberry_yakult img:hover,
+.greenapple_yakult img:hover,
+.kiwi_yakult img:hover,
+.lychee_yakult img:hover,
+.strawberry_yakult img:hover{
+    transform:scale(1.1);
+    z-index: 2;
+}
+.blueberry_yakult span,
+.greenapple_yakult span,
+.kiwi_yakult span,
+.lychee_yakult span,
+.strawberry_yakult span{
+    font-size: 17px;
+    display:block;
+    color: #db9c48;
+    margin-bottom: 10px;
+    line-height: 10px;
+    transition: 1s;
+}
+.blueberry_yakult span:hover,
+.greenapple_yakult span:hover,
+.kiwi_yakult span:hover,
+.lychee_yakult span:hover,
+.strawberry_yakult span:hover{
+    transform:scale(1.1);
+    z-index: 2;
+
+}
+@media(max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    .nav_tabs{
+        background-color: rgba(255,232,197, 0.5);
+        position:absolute;
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 0px;
+        left:-100%;
+        top:90px;
+        text-align: center;
+        transition: all .5s;
+    }
+    #check:checked ~ .nav_tabs{
+        left:0;
+    }
+    nav img{
+        margin-left: 10px;
+    }
+    nav ul li{
+        display: block;
+        line-height: 70px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        margin-bottom: 0;
+        font-weight: bolder;
+        margin-left: 55px;
+    }
+    .home:hover{
+        background-color: #db9c48;
+        border-radius: 10px;
+        transition: .5s;
+    }
+    .menu:hover{
+        background-color: #db9c48;
+        border-radius: 10px;
+        transition: .5s;
+    }
+    .souvenir:hover{
+        background-color: #db9c48;
+        border-radius: 10px;
+        transition: .5s;
+    }
+    .more:hover{
+        background-color: #db9c48;
+        border-radius: 10px;
+        transition: .5s;
+    }
+    nav{
+        border: none;
+    }
+    .category{
+        margin-top: 0px;
+        width: 100vw;
+    }
+    .cat{
+        font-size: 50px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .sea_blender{
+        width: 100vw;
+        display:grid;
+        margin-top: 25px;
+        text-align: center;    
+    }
+    .sea_blender h2{
+        color:#db9c48;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .soda_fruity_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .soda_pop{
+        border-top: none;
+    }
+    .soda_pop,
+    .fruity_yakult{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    border:2px solid #db9c48;
+    background-color: #ffe8C5;
+    margin-bottom: 20px;
+    }
+    .soda_pop h3,
+    .fruity_yakult h3{
+    color:#db9c48;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-top: none;
+    border-bottom: 2px solid #db9c48;
+    text-align: center;
+    font-size: 30px;
+    }
+    .soda_product,
+    .yakult_product{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    .blueberry,
+    .greenapple,
+    .kiwi,
+    .lychee,
+    .strawberry{
+    display:flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    border-radius: 10px;
+    }
+    .blueberry img,
+    .greenapple img,
+    .kiwi img,
+    .lychee img,
+    .strawberry img{
+        width: 150px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 45px;
+        margin-right: 10px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .blueberry span,
+    .greenapple span,
+    .kiwi span,
+    .lychee span,
+    .strawberry span{
+        font-size: 15px;
+        display:block;
+        color: #db9c48;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .blueberry_yakult img,
+    .greenapple_yakult img,
+    .kiwi_yakult img,
+    .lychee_yakult img,
+    .strawberry_yakult img{
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    margin-right: 10px;
+    height: 191px;
+    border-radius: 10px;
+    }
+    .blueberry_yakult span,
+    .greenapple_yakult span,
+    .kiwi_yakult span,
+    .lychee_yakult span,
+    .strawberry_yakult span{
+        font-size: 15px;
+        display:block;
+        color: #db9c48;
+        margin-bottom: 10px;
+        line-height: 10px;
+        text-align: center;
+
+    }
+
+    .other_main_container{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .other_main_container h2{
+        color: #db9c48;
+        font-size: 30px;
+        font-weight:lighter;
+        text-align: center;
+
+    }
+    .others_container{
+        display:grid;
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media(max-width:425px){
+    .category{
+        margin-top: 0px;
+        width: 100vw;
+    }
+    .cat{
+        font-size: 50px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .sea_blender{
+        width: 100vw;
+        display:grid;
+        margin-top: 25px;   
+    }
+    .sea_blender h2{
+        color:#db9c48;
+        font-size: 30px;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .soda_fruity_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .soda_pop{
+        border-top: none;
+    }
+    .soda_pop,
+    .fruity_yakult{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    border:2px solid #db9c48;
+    background-color: #ffe8C5;
+    }
+    .soda_pop h3,
+    .fruity_yakult h3{
+    color:#db9c48;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-top: none;
+    border-bottom: 2px solid #db9c48;
+    text-align: center;
+    font-size: 30px;
+    }
+    .soda_product,
+    .yakult_product{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    .blueberry,
+    .greenapple,
+    .kiwi,
+    .lychee,
+    .strawberry{
+    display:flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    border-radius: 10px;
+    }
+    .blueberry img,
+    .greenapple img,
+    .kiwi img,
+    .lychee img,
+    .strawberry img{
+        width: 150px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 10px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .blueberry span,
+    .greenapple span,
+    .kiwi span,
+    .lychee span,
+    .strawberry span{
+        font-size: 15px;
+        display:block;
+        color: #db9c48;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .blueberry_yakult img,
+    .greenapple_yakult img,
+    .kiwi_yakult img,
+    .lychee_yakult img,
+    .strawberry_yakult img{
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    height: 191px;
+    border-radius: 10px;
+    }
+    .blueberry_yakult span,
+    .greenapple_yakult span,
+    .kiwi_yakult span,
+    .lychee_yakult span,
+    .strawberry_yakult span{
+        font-size: 15px;
+        display:block;
+        color: #ffe8C5;
+        margin-bottom: 10px;
+        line-height: 10px;
+        text-align: center;
+
+    }
+
+   
+
+    .other_main_container{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        
+    }
+    .other_main_container h2{
+        color: #db9c48;
+        font-size: 30px;
+        font-weight:lighter;
+        text-align: center;
+
+    }
+    .others_container{
+        display:grid;
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
+    
+    
+}
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform:translateY(-10px)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
